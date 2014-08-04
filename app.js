@@ -113,22 +113,11 @@ adminLogin(function() {
         console.log("Begin: " + n + ' ' + t);
     
     // Add many users    
-    for (i=0;   i < 10000; i++)
+    for (i=0;   i < 60000; i++)
         {
             createUser("User " + i.toString(), function(){
                 
-                if(i >= 9999) {
-                    
-                    // This will show dupes towards the end once
-                    // the for loop has finished...Not all the requests
-                    // will have completed...
-                    
-                    d1 = new Date();
-                    n1 = d1.toDateString();
-                    t1 = d1.toLocaleTimeString();
-                    console.log("Begin: " + n + ' ' + t);
-                    console.log("End: " + n1 + ' ' + t1);        
-                }
+/*s*/
                 
             });
         }
